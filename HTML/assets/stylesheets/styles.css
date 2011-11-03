@@ -18,7 +18,7 @@ article, aside, figure, footer, header, hgroup, menu, nav, section {display:bloc
 .right {float:right !important;}
 
 /* MAIN */                
-body {width:100%; color:#FFFFFF; background:url("../images/backgrounds/textures/blue.png") #80C1D6;}
+body {width:100%; color:#FFFFFF; background:#80C1D6;}
 
 figcaption {font-family:KomikaTitle-Paint; text-align:center;}
 
