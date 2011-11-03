@@ -1,0 +1,133 @@
+/* CLEAR */
+html, body, header, div, footer, p, img, span {float:none; margin:0px; padding:0px; outline:none; border:none; background:none;}
+form, fieldset, input, select, option, textarea {float:none; margin:0px; padding:0px; outline:none; border:none; background:none;}
+ol, ul, li {display:inline-block; float:none; margin:0px; padding:0px; outline:none; border:none; background:none; list-style:none outside;}
+h1, h2, h3, h4, h5, h6 {display:inline-block; float:none; margin:0px; padding:0px; font-family:KomikaTitle-Paint;}
+
+/* HTML5 */ 
+article, aside, figure, footer, header, hgroup, menu, nav, section {display:block; margin:0px; padding:0px; overflow:hidden;}
+
+/* DECLERATIONS */
+@font-face {font-family:KomikaTitle-Paint; src: url("../fonts/Komika-Title/KomikaTitle-Paint.ttf");}
+@font-face {font-family:DigitalDream; src: url("../fonts/Digital-dream/DIGITALDREAM.ttf");}
+@font-face {font-family:DigitalDreamFat; src: url("../fonts/Digital-dream/DIGITALDREAMFAT.ttf");}
+@font-face {font-family:OpenSansSemiBold; src: url("../fonts/open-sans/OpenSans-Semibold.ttf");}
+
+/* SINGLE OVERRIDES */
+.left {float:left !important;}
+.right {float:right !important;}
+
+/* MAIN */                
+body {width:100%; color:#FFFFFF; background:#80C1D6;}
+
+figcaption {font-family:KomikaTitle-Paint; text-align:center;}
+
+.komika-title {font-family:KomikaTitle-Paint;}
+.digital-dream {font-family:DigitalDream;}
+.open-sans {font-family:OpenSansSemiBold;}
+
+/* NAVIGATION */
+#index {font-family:OpenSansSemiBold;}
+#index nav {width:960px; margin:0 auto; font-size:18px; text-transform:uppercase;}
+#index nav ul {display:block; width:66%; margin:0 auto;}
+#index nav ul li {float:left; margin:0px; padding:0px 25px;}
+#index nav ul li a {text-decoration:none; color:#FFFFFF;}
+#index nav ul li a:hover {color:#EEF13F;}
+#index nav ul li a.active {color:#EEF13F;}
+#index nav ul li a {-webkit-transition: color 0.125s ease-in}
+
+#index .wrapper {display:inline-block; border-top:7px solid rgba(0, 0, 0, 0.06); border-bottom:7px solid rgba(0, 0, 0, 0.06);}
+#index .wrapper[data-section="nav"] {position:absolute; top:0px; left:0px; width:100%; border:none; background:rgba(15, 40, 48, 0.05); z-index:1000;}
+#index .wrapper[data-section="header"] {width:100%; height:714px; border-top:0px; border:none; background: url("../images/backgrounds/textures/blue.png") ,url("../images/splat.png") no-repeat center ,url("../images/super_splat.png") ,#80C1D6; background-position: 50% 50% ,52% 25% ,50% 50%;}
+#index .wrapper[data-section="obstacles"] {width:100%; height:940px; background:url("../images/backgrounds/textures/orange.png") #FE6638;}
+#index .wrapper[data-section="prizes"] {width:100%; height:1015px; background:url("../images/backgrounds/textures/green.png") #80B238;}
+#index .wrapper[data-section="enter"] {width:100%; height:805px; padding:30px 0px 0px 0px; background:url("../images/backgrounds/textures/blue.png") #80C1D6;}
+#index .wrapper[data-section="footer"] {width:100%; border-top:0px; background:url("../images/backgrounds/textures/blue.png") #80C1D6;}
+
+#index .wrapper[data-section="header"] header {position:relative; top:175px; left:0px;}
+#index .wrapper[data-section="header"] img {display:block; margin:0 auto; padding:0px 0px 0px 55px;}
+#index .wrapper[data-section="header"] hgroup {padding:140px 0px 0px 108px;}
+#index .wrapper[data-section="header"] .heading {width:100%; color:#FE6537; font-size:50px; letter-spacing:2px; text-align:center; text-shadow: 2px 2px 0px #F2F2F2;}
+#index .wrapper[data-section="header"] .subheading {display:block; width:100%; font-family:OpenSansSemiBold; font-size:22px; text-align:center;}
+
+#index section {width:960px; margin:0 auto;}
+#index section header {margin:25px 0px 25px 62px; background:url("../images/backgrounds/checker.png") repeat-x 0px 17px;}
+#index section header .heading {color:#FEFEFE; font-size:38px; letter-spacing:2px; text-align:left; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.20);}
+
+#index section#obstacles {overflow:visible;}
+#index section#obstacles h2.heading {padding:0px 34px 0px 0px; background:url("../images/backgrounds/textures/orange.png") #FE6638;}
+#index section#obstacles ul {float:left; width:480px; padding:25px 0px 0px 50px;}
+#index section#obstacles ul li.obstacle {float:left;}
+#index section#obstacles ul li figure {width:222px; height:222px; margin:0px 10px 18px 8px; border-radius:8px; background:url("../images/backgrounds/textures/green.png") #80B238; cursor:pointer; -webkit-transition: background 0.125s ease-in}
+#index section#obstacles ul li figure img {display:block; margin:15px auto;}
+#index section#obstacles ul li figure:hover {background:url("../images/backgrounds/textures/yellow.png") #EEF13F;}
+#index section#obstacles ul li figure.active {background:#EEF13F;}
+#index section#obstacles ul li figure:hover figcaption {color:#F46034;}
+#index section#obstacles ul li figure.active figcaption {color:#F46034;}
+#index section#obstacles ul li figure figcaption {font-size:14px;}
+#index section#obstacles ul li figure figcaption {-webkit-transition: color 0.125s ease-in}
+#index section#obstacles #obstacle {float:right;}
+#index section#obstacles figure#obstacle {width:425px; overflow:visible;}
+#index section#obstacles figure#obstacle img {display:block; margin:50px;}
+#index section#obstacles figure#obstacle figcaption {padding:52px 0px; font-size:21px; -webkit-transform: rotate(-8deg); text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.20); background:url("../images/splat.png") no-repeat center; background-size:236px 206px;}
+#index section#obstacles figure#obstacle figcaption .heading {font-size:40px;}
+
+.prize {display:inline-block; background:url("../images/prizes.png") 0px 0px;}
+.prize[data-prize="trip"] {width:353px; height:375px; background-position:0px 0px;}
+.prize[data-prize="keyboard"] {width:392px; height:151px; background-position:0px -386px;}
+.prize[data-prize="skateboard"] {width:392px; height:226px; background-position:0px -552px;}
+.prize[data-prize="tv_vcr"] {width:335px; height:351px; background-position:0px -793px;}
+
+#index section#prizes h2.heading {padding:0px 29px 0px 0px; background:url("../images/backgrounds/textures/green.png") #80B238;}
+#index section#prizes figure {float:left; margin:60px 0px 30px 105px;}
+#index section#prizes figure figcaption {margin:18px 0px 0px 0px; font-size:16px;}
+#index section#prizes figure.custom#tv_vcr {margin:21px 25px 0px 0px;}
+
+#index section#enter h2.heading {padding:0px 37px 0px 0px; background:url("../images/backgrounds/textures/blue.png") #80C1D6;}
+#index section#enter form#enter-form {float:left;}
+#index section#enter form#enter-form {width:380px; padding:38px 0px 0px 60px;}
+#index section#enter form#enter-form input::-webkit-input-placeholder {font-size:16px; color:#FFFFFF; font-family:KomikaTitle-Paint;}
+#index section#enter form#enter-form input {width:98%; height:54px; margin:0px 0px 12px 0px; padding:0px 0px 0px 8px; font-family:KomikaTitle-Paint; font-size:16px; color:#FFFFFF; border-radius:8px; background:#FE6336;}
+#index section#enter form#enter-form select {margin:0px 0px 12px 0px; padding:0px 0px 0px 8px; font-size:16px; height:49px; color:#FFFFFF; font-family:KomikaTitle-Paint; background:url("../images/select_arrow.png") no-repeat 101% 0px #FE6336; -webkit-appearance:none;}
+#index section#enter form#enter-form select[name="team-color"] {width:220px;}
+#index section#enter form#enter-form select[name="gender"] {float:right; width:139px;}
+#index section#enter form#enter-form input[type="submit"] {padding:75px 0px 130px 0px; font-family:KomikaTitle-Paint; font-size:26px; -webkit-transform: rotate(-8deg); text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.20); background:url("../images/splat.png") no-repeat center; background-size:177px 155px;}
+#index section#enter form#enter-form input[type="submit"]:hover {color:#EEF13F;}
+#index section#enter form#enter-form input[type="submit"] {-webkit-transition: color 0.125s ease-in}
+
+#index section#enter #clock {float:right; padding:37px 0px 0px 0px;}
+#index section#enter #clock figure {width:386px; background:url("../images/clock.png") no-repeat;}
+#index section#enter #clock figure span {display:block; padding:88px 0px 88px 84px;}
+#index section#enter #clock figure span#countdown {font-family:DigitalDreamFat; font-size:140px; color:#F5EB00; text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);}
+#index section#enter #clock figure figcaption {width:270px; margin:0px auto; padding:50px 0px 0px 12px; font-size:40px; line-height:53px; letter-spacing:2px;}
+
+#index .wrapper[data-section="footer"] {position:relative;}
+#index .wrapper[data-section="footer"] h2 {position:absolute; top:-42px; left:48%; padding:0px 33px; font-size:49px; background:url("../images/backgrounds/bean.png") no-repeat;}
+#index footer {padding:42px 0px 10px 0px;}
+#index footer section h3  {width:100%; font-family:OpenSansSemiBold;}
+#index footer section {margin:20px auto; padding:0px 0px 0px 100px; text-align:center;}
+#index footer section:first-child {width:700px; text-transform:capitalize;}
+#index footer section:last-child {width:350px;}
+#index footer section .left {text-align:right;}
+#index footer section .right {text-align:left;}
+
+#index .foot {padding:25px 0px 25px 115px; font-size:14px; text-align:center; background:url("../images/backgrounds/textures/blue.png") #80C1D6;}
+
+/* COLORBOX */
+#colorbox, #cboxOverlay, #cboxWrapper {position:absolute; top:0; left:0; z-index:9999;}
+#cboxOverlay {position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft {clear:left;}
+#cboxContent {position:relative;}
+#cboxLoadedContent {overflow:auto;}
+#cboxTitle {margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic {position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {cursor:pointer;}
+.cboxPhoto {float:left; margin:auto; border:0; display:block;}
+.cboxIframe {width:100%; height:100%; display:block; border:0;}
+
+#cboxOverlay {background:#000000;}
+#colorbox {border-radius:8px; background:url("../images/backgrounds/textures/blue.png") #80C1D6;}
+#colorbox header {padding:0px 15px 0px 0px; border-radius:8px 8px 0px 0px; background:url("../images/backgrounds/checker.png") repeat-x 0px 16px, url("../images/backgrounds/textures/green.png") #80B238;}
+#colorbox header .heading {padding:0px 10px; color:#FEFEFE; font-size:40px; letter-spacing:2px; text-align:left; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.20); background:url("../images/backgrounds/textures/green.png") #80B238;}
+#colorbox p {padding:15px;}
+#cboxClose {position:absolute; top:-34px; right:-15px; padding:21px; font-size:24px; background:url("../images/super_splat.png") no-repeat center; background-size:56px 46px;}

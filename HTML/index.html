@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Knuckelodeon - Triple Dare!</title>
+    <base href="">
+
+    <link rel="stylesheet" href="assets/stylesheets/styles.css" />
+
+    <script src="assets/javascripts/jquery.1.6.4.min.js"></script>
+    <script src="assets/javascripts/jquery.ui.1.8.16.custom.min.js"></script>
+    <script src="assets/javascripts/jquery.colorbox.min.js"></script>
+    <script src="assets/javascripts/application.js" ></script>   
+  </head>
+
+  <body id="index" data-section="index">
+
+    <div class="wrapper" data-section="nav">
+      <nav class="nav" id="primary-navigation">
+        <ul>
+          <li><a href="obstacles">obstacles</a></li>
+          <li><a href="prizes">prizes</a></li>
+          <li><a href="enter">be a contestant</a></li>
+          <li><a href="index">back to top</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="wrapper" data-section="header">
+      <header>
+        <img src="assets/images/triple_dare.png" alt="Kuckelodean Triple Dare!" width="276" height="206"/>
+        <hgroup>
+          <h1 class="heading">the web's messiest challenge!</h1>
+          <h2 class="subheading">Airing Thursdays on the Knuckelodian Network&trade;</h2>
+        </hgroup>
+      </header>
+    </div>
+
+    <div class="wrapper" data-section="obstacles">
+      <section id="obstacles">
+        <header>
+          <h2 class="heading">obstacles</h2>
+        </header>
+
+        <ul>
+          <li class="obstacle" data-obstacle="the-tank" data-width="428" data-height="380">
+            <figure>
+              <img src="assets/images/obstacles/the-tank.png" alt="Obstacle: The Tank" width="171" height="152">
+              <figcaption data-description="tank you, tank you very much!">the tank</figcaption>
+            </figure>
+          </li>
+          <li class="obstacle" data-obstacle="sundae-slide" data-width="318" data-height="453">
+            <figure>
+              <img src="assets/images/obstacles/sundae-slide.png" alt="Obstacle: Sundae Slide" width="118" height="168">
+              <figcaption data-description="this is more than just a walk in the park!">sundae slide</figcaption>
+            </figure>
+          </li>
+          <li class="obstacle" data-obstacle="human-hamster-wheel" data-width="434" data-height="434">
+            <figure>
+              <img src="assets/images/obstacles/human-hamster-wheel.png" alt="Obstacle: Human Hamster Wheel" width="166" height="164">
+              <figcaption data-description="wheeeeeeee!">human hamster wheel</figcaption>
+            </figure>
+          </li>
+          <li class="obstacle" data-obstacle="down-the-hatch" data-width="362" data-height="462">
+            <figure>
+              <img src="assets/images/obstacles/down-the-hatch.png" alt="Obstacle: Down the Hatch" width="126" height="161">
+              <figcaption data-description="6ft slide covered in gunk">down the hatch</figcaption>
+            </figure>
+          </li>
+          <li class="obstacle" data-obstacle="pick-it" data-width="386" data-height="380">
+            <figure>
+              <img src="assets/images/obstacles/pick-it.png" alt="Obstacle: Pick It!" width="163" height="161">
+              <figcaption data-description="now you can pick your friends and your nose">pick it!</figcaption>
+            </figure>
+          </li>
+          <li class="obstacle" data-obstacle="the-wringer" data-width="506" data-height="494">
+            <figure>
+              <img src="assets/images/obstacles/the-wringer.png" alt="Obstacle: The Wringer" width="164" height="160">
+              <figcaption data-description="this will hang you out to dry!">the wringer</figcaption>
+            </figure>
+          </li>
+        </ul>
+
+        <figure id="obstacle">
+          <figcaption>
+            <h3 class="heading">Kuckelodean Obstacles</h3>
+            <p>Click to highlight an obstacle!</p>
+          </figcaption>
+          <img src="" alt="" >
+        </figure>
+      </section>
+    </div>
+
+    <div class="wrapper" data-section="prizes">
+      <section id="prizes">
+        <header>
+          <h2 class="heading">prizes</h2>
+        </header>
+        <figure>
+          <span class="prize" data-prize="trip"></span>
+          <figcaption>a trip to space camp!</figcaption>
+        </figure>
+        <figure class="right">
+          <span class="prize" data-prize="skateboard"></span>
+          <figcaption>a nash skateboard</figcaption>
+        </figure>
+        <figure class="right custom" id="tv_vcr">
+          <span class="prize" data-prize="tv_vcr"></span>
+          <figcaption>a 13 inch tv/vcr combo!</figcaption>
+        </figure>
+        <figure>
+          <span class="prize" data-prize="keyboard"></span>
+          <figcaption>a casio rapman keyboard!</figcaption>
+        </figure>
+      </section>
+    </div>
+
+    <div class="wrapper" data-section="enter">
+      <section id="enter">
+        <header>
+          <h2 class="heading">be a contestant</h2>
+        </header>
+
+        <form method="" action="" id="enter-form">
+          <fieldset>
+            <input type="text" name="name" placeholder="your name" required />
+            <input type="email" name="email" placeholder="email address" required />
+            <input type="text" name="team-name" placeholder="team name" required />
+            <select name="team-color" required >
+              <option value="">team color</option>
+              <option value="red">red</option>
+              <option value="yellow">yellow</option>
+              <option value="pink">pink</option>
+              <option value="green">green</option>
+              <option value="purple">purple</option>
+              <option value="orange">orange</option>
+              <option value="blue">blue</option>
+              <option value="black">black</option>
+              <option value="white">white</option>
+            </select>
+            <select name="gender" required >
+              <option value="">gender</option>
+              <option value="male">male</option>
+              <option value="female">female</option>
+            </select>
+            <input type="url" name="" placeholder="profile photo url" required />
+            <input type="submit" name="submit" value="submit entry!"/>
+          </fieldset>
+        </form>
+
+        <div id="clock">
+          <figure>
+            <span id="countdown">60</span>
+            <figcaption>the clock is ticking!</figcaption>
+          </figure>
+        </div>
+
+      </section>
+    </div>
+
+    <div class="wrapper" data-section="footer">
+      <h2>kn</h2>
+      <footer>
+        <section>
+          <h3>the knuckelodean network</h3>
+          <div class="left">
+            <p>The Knucklelodeon Network is not affiliated</p>
+            <p>with Nickelodeon, nor is it an actual</p>
+            <p>television network</p>
+          </div>
+          <div class="right">
+            <p>Triple Dare contestents consent to potential</p>
+            <p>physical bodily harm, like being burried</p>
+            <p>alive by a giant waffle.</p>
+          </div>
+        </section>
+
+        <section>
+          <h3>visit our studios</h3>
+          <div class="left">
+            <p>11 Slime Time Way</p>
+            <p>Sacrameno, CA 94203</p>
+          </div>
+          <div class="right">
+            <p>329 Gunk Road</p>
+            <p>Jacksonville, FL 32099</p>
+          </div>
+        </section>
+      </footer>
+    </div>
+
+    <p class="foot">This design is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License</p>
+    
+  </body>
+</html>
